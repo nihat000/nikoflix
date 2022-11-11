@@ -185,12 +185,29 @@ nav button:hover {
 }
 .s .field-1 > p {
    width: 50%;
-}
+} 
 .s-info .field-2 {
    display: flex;
    margin-top: 1.55rem;
 }
 .s .field-2 > p {width: 50%;}
 
+.cast-wrap{
+   width: 1200px;
+   margin: 0 auto;
+}
+
+.cast {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: auto auto auto auto auto auto;
+   grid-gap :  50px;
+   color : #000;
+}
+.cast img {border-radius: 6px 6px 0 0; width: 100%;}
 
 
+.cast .el { background-color: #eee;border-radius: 6px;}
+
+
+.cast .el p {font-size: 90%;}
