@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NikoFlix</title>
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/app.js" defer></script>
+</head>
+
+<body>
+   <nav>
+      <div class="logo-wrap">
+         <a href="index.html"> <img src="img/logo.png" alt="" class="logo"> </a>
+      </div>
+      <div class="actions">
+         <button> Login</button>
+         <button> Sign up</button>
+      </div>
+   </nav>
+   <div class="search-wrap mt-3">
+      <div class="input-wrap">
+         <img src="img/search.svg" alt="">
+         <input type="text" placeholder="Enter keywords">
+      </div>
+      <button onclick="search()"> ❯ </button>
+   </div>
+   <div class="info">
+      <h2> Trending </h2>
+      <button class="active"> TV Shows</button>
+      <button class=""> Series </button>
+      <button class=""> Movies </button>
+   </div>
+   <div class="list">
+   </div>
+   <div class="pagination mt-5">
+      <a id='btn-first' class="btn "> ❮❮ </a>
+      <a id='btn-previous' class="btn "> ❮ </a>
+      <span id="page-number" class="page-active"> Pages </span>
+      <a id="btn-next" class="btn"> ❯ </a>
+      <a id="btn-last" class="btn"> ❯❯ </a>
+   </div>
+</body>
+
+</html>

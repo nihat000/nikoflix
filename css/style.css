@@ -1,0 +1,192 @@
+*{margin:0;padding:0;box-sizing: border-box;text-decoration: none;}
+button{cursor: pointer; border: none;}
+.mt-1{ margin-top: 1rem;}
+.mt-2 {margin-top: 2rem;}
+.mt-3{margin-top: 3rem;}
+.mt-4{margin-top: 4rem;}
+.mt-5{margin-top: 5rem;}
+
+.d-flex{display: flex;} 
+.justify-content-center {justify-content: center;}
+.align-items-center {align-items: center; }
+.w-1000 {width: 1000px;}
+.w-1200 {width: 1200px;}
+.m-0-a {margin: 0 auto;}
+.flex-d-c {flex-direction: column;}
+.flex-d-r {flex-direction: row;}
+html{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+
+   background-color: #D6E4E5;
+}
+
+nav {
+   width: 1200px;
+   margin: 1rem auto 1rem ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:  1rem 0  ;
+}
+nav .logo {width: 128px;}
+nav button {
+   margin-left: 1.25rem;
+   padding: .7rem 1.2rem; 
+   color : #666;
+   background-color: #f5f5f5;
+   border-radius: 6px;
+   font-size: 1.25rem;
+   font-weight: bold;
+}
+nav button:hover {
+   color: #000 !important;
+}
+
+
+
+.search-wrap { width: 1000px; margin: 0 auto; position:  relative; display: flex;  align-items: center;}
+.search-wrap img {  position: absolute; width: 24px; top : 20px ; left : 10px}
+.search-wrap input {border-radius: 12px; width: 900px; padding : 20px 44px ;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1); 
+   border: none !important ;
+   border-color: #fff;
+   font-size: 20px;
+   outline:none;
+   }
+.search-wrap button {
+   margin-left: 1rem ;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   color : #fff;
+   background-color: #0008C1;
+}
+
+
+.info {
+   width: 1200px; margin : 3rem auto;
+   display: flex;
+   align-items: center;
+}
+.info button { 
+   color:#fff;
+   background-color: #2b5fad;
+   padding:  1rem 1.2rem;
+   border-radius: 6px;
+   margin-left: 1rem;
+   opacity: .7;
+}
+.info .active {
+   opacity: 1;
+}
+
+.list {
+   width: 1200px;
+   margin : 0 auto;
+   display: grid ; 
+   grid-template-columns: 250px 250px 250px 250px ;
+   grid-gap: 50px;
+   
+}
+
+.element{   box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);border-radius: 6px; }
+.element .img-wrap {position: relative;}
+.element .img-wrap .cover { width: 250px; height: 350px; border-radius: 5px;}
+.element .img-wrap .effect {  width: 64px; height: 64px; background-color: #0008C1;
+   border-radius: 45%;
+   opacity: 0;
+   
+   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);  }
+   .element .img-wrap:hover .effect {opacity: 1; transition: .2s ease-in;} 
+.element .name {font-size: 1.25rem; margin: .4rem 0; font-weight: bold; text-align: center;}
+
+.element .field-1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: .5rem;
+   padding: 0 2rem;
+   font-size: .8rem;
+}
+.element .field-1 img {width: 16px;}
+.element .field-2 {padding: 0 0.5rem;text-align: center;}
+.element  a {  color :#fff;display: inline-block; width: 100%; margin-top :1rem ;  background-color: #06283D;  
+   border-radius: 5px;  padding: 1rem 1.2rem; text-align: center;}
+.element a:hover{opacity: .5;}
+
+.pagination {  width: 1200px; margin:  2rem auto; display: flex;  justify-content: flex-end; align-items: center; }
+
+.pagination img { width: 32px; height: 32px;}
+
+.pagination .btn{
+   padding : .6rem 1rem; 
+   color : #fff;
+   background-color: #04AA6D;
+   border-radius:6px;
+   margin :  0 .6rem;
+}
+
+
+.s .img-wrap img { border-radius: 6px;}
+
+.s {
+   width: 1200px;
+   margin: 0 auto;
+   display: flex;
+}
+
+.s-info {
+   margin-left: 1rem;
+   display: flex;
+   flex-direction: column;
+   padding : 0 2rem;
+}
+.s .img-wrap img{
+   width: 330px;
+}
+.s-info >  button{
+   padding : .7rem 3.1rem;
+   color : #fff;
+   background-color: #FF5964;
+   border-radius: 12px;
+   font-size: 1rem;
+   margin-top: 1rem;
+}
+.s-info .name {
+   font-size: 2.2rem;
+   font-weight: 300;
+   margin-bottom:  1.25rem;
+}
+
+.s-info > div button {
+   padding : .7rem 1.1rem;
+   background-color: #fff;
+   border-radius: 4px;
+   border: 2px solid #000;
+   border-radius: 12px;
+   font-size: 1rem;
+   margin-right: .6rem;
+}
+.s-info #imdb{
+   color : #4B8F8C;
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+.s-info #summary{margin-top: 1.25rem;}
+
+.s-info .field-1 {
+   display: flex;
+   margin-top: 1.25rem;
+}
+.s .field-1 > p {
+   width: 50%;
+}
+.s-info .field-2 {
+   display: flex;
+   margin-top: 1.55rem;
+}
+.s .field-2 > p {width: 50%;}
