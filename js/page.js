@@ -2,6 +2,8 @@ const url = new URLSearchParams(window.location.search);
 const id = parseInt(url.get("id"))
 let data;
 
+
+
 if (isNaN(id)) id = 1;
 
 fetch(`https://api.tvmaze.com/shows/${id}`).then((data) => data.json()).then(
@@ -17,4 +19,5 @@ function load() {
    document.querySelector('.s #ended').innerHTML = "Ended : " + x.ended
    document.querySelector('.s #genre').innerHTML = "Genre : " + x.genres;
    document.querySelector('.s #country').innerHTML = "Country: " + x.network.country.name
+   document.querySelector('#bg').src = data.image.original
 }

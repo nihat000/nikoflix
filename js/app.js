@@ -1,6 +1,6 @@
 let data;
 const params = new URLSearchParams(window.location.search)
-const paginationNumber = 15
+const paginationNumber = 16
 const query = params.get('query');
 let myUrl;
 
@@ -31,12 +31,16 @@ if (isNaN(page)) {
 const pageNumberEl = document.querySelector("#page-number");
 const btnPrevious = document.getElementById("btn-previous");
 const btnNext = document.getElementById("btn-next");
+
+
+const btnFirst = document.getElementById("btn-first");
 const btnLast = document.getElementById("btn-last");
 
 pageNumberEl.innerText = page;
 btnPrevious.href = `index.html?page=${page - 1 < 1 ? 1 : page - 1}`
 btnNext.href = `index.html?page=${page + 1 > lastPage ? lastPage : page + 1}`
-btnLast.href = `index.html`
+btnLast.href = `index.html?page=${lastPage}`
+btnFirst.href = `index.html?page=1`
 
 
 
